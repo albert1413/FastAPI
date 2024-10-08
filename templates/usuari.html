@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Llista d'usuaris</title>
+</head>
+<body>
+    <h1>Llista d'usuaris</h1>
+    <ul>
+        {% for usuari in usuaris %}
+            <li><a href="/usuaris/{{ loop.index0 }}">{{ usuari.Nom }} {{ usuari.Cognom }} ({{ usuari.Edat }} anys)</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
